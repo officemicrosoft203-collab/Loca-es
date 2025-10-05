@@ -1,0 +1,153 @@
+/* src/components/ProductList.css */
+
+.product-list {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #2c5530;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  padding: 15px 20px; /* padding um pouco menor */
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(44, 85, 48, 0.3);
+}
+
+.product-image-container {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 15px;
+  width: 100%;
+  height: 230px; /* container maior para a imagem */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* imagem inteira sem cortar */
+  border-radius: 12px;
+}
+
+.product-category {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #2c5530cc;
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.product-title {
+  font-size: 1.35rem;
+  color: #1a3a1f;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.product-description {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.product-details {
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.product-price {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+/* Botões estilizados para consulta e orçamento */
+.action-btn {
+  flex: 1;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c5530;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  transition: background 0.3s ease;
+  margin-top: 5px;
+  text-decoration: none; /* caso sejam links */
+}
+
+.action-btn:hover {
+  background-color: #1e3a20;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 900px) {
+  .product-image-container {
+    height: 200px;
+  }
+
+  .product-title {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .product-image-container {
+    height: 180px;
+  }
+
+  .product-title {
+    font-size: 1.15rem;
+  }
+}
+

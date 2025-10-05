@@ -1,0 +1,63 @@
+.orcamento-container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+}
+
+.orcamento-container h1 {
+  margin-bottom: 10px;
+  font-size: 26px;
+  color: #333;
+}
+
+.orcamento-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.orcamento-form label {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #444;
+}
+
+.orcamento-form input,
+.orcamento-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.orcamento-form textarea {
+  resize: vertical;
+}
+
+.orcamento-form button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #28a745;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.orcamento-form button:hover {
+  background-color: #218838;
+}
+
+.mensagem-sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 10px 15px;
+  border: 1px solid #c3e6cb;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
