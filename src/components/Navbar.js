@@ -42,7 +42,6 @@ function Navbar() {
                     <li><a href="#contact" className="nav-link" onClick={closeMenu}>Contato</a></li>
 
                     {/* ✅ Links novos com navegação por rota */}
-                    <li><Link to="/consultar-loja" className="nav-link" onClick={closeMenu}>Consultar Loja</Link></li>
                     <li><Link to="/orcamento" className="cta-button" onClick={closeMenu}>Solicitar Orçamento</Link></li>
                 </ul>
             </div>
